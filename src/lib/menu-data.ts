@@ -1,0 +1,243 @@
+import type { Product, ProductCategory, Sucursal, Promo, Review } from "@/types/menu";
+
+export const products: Product[] = [
+  // ── CHAROLAS ──────────────────────────────────────────────────────────────
+  {
+    id: "juanicharola",
+    slug: "juanicharola",
+    name: "Juanicharola",
+    description: "Sabritas, pepino, rielitos, cacahuates, camarón, carne seca, salseado Sonora",
+    price: 23900,
+    category: "charolas",
+    imagePath: "/images/productos/juanicharola.webp",
+    isFeatured: true,
+    isAvailable: true,
+  },
+  {
+    id: "charoson",
+    slug: "charoson",
+    name: "Charoson",
+    description: "Papas, carne seca, rielitos, cacahuates, pepino, salseado Sonora",
+    price: 26900,
+    category: "charolas",
+    imagePath: "/images/productos/charoson.webp",
+    isFeatured: true,
+    isAvailable: true,
+  },
+  {
+    id: "charofish",
+    slug: "charofish",
+    name: "Charofish",
+    description: "Papas, pepino, cacahuate, rielitos, camarón, salseado Sonora",
+    price: 21900,
+    category: "charolas",
+    imagePath: "/images/productos/charofish.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "charola-fiestas",
+    slug: "charola-fiestas",
+    name: "Charola para Fiestas",
+    description: "Papas, pepino, cacahuate, rielitos, dulces tamarindo, banderillas, salseado",
+    price: 49900,
+    category: "charolas",
+    imagePath: "/images/productos/charola-fiestas.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "salseada",
+    slug: "salseada",
+    name: "Salseada",
+    description: "Papas, pepino, cacahuates, rielitos, salseado Sonora",
+    price: 12900,
+    category: "charolas",
+    imagePath: "/images/productos/salseada.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  // ── BEBIDAS ───────────────────────────────────────────────────────────────
+  {
+    id: "clamatazo",
+    slug: "clamatazo",
+    name: "Clamatazo",
+    description: "Camarones, papas, carne seca Sonora, cacahuate, rielitos, pepino, banderilla",
+    price: 22200,
+    category: "bebidas",
+    imagePath: "/images/productos/clamatazo.webp",
+    isFeatured: true,
+    isAvailable: true,
+  },
+  {
+    id: "mango-tango",
+    slug: "mango-tango",
+    name: "Mango Tango",
+    description: "Frapeado de mango, chamoy, gomitas de tamarindo",
+    price: 12900,
+    category: "bebidas",
+    imagePath: "/images/productos/mango-tango.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "limonada-moras",
+    slug: "limonada-moras",
+    name: "Limonada de Moras",
+    description: "Limonada con agua mineral sabor moras",
+    price: 7200,
+    category: "bebidas",
+    imagePath: "/images/productos/limonada-moras.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "uvola",
+    slug: "uvola",
+    name: "Úvola",
+    description: "Bebida uva y limón, mineralizada",
+    price: 7200,
+    category: "bebidas",
+    imagePath: "/images/productos/uvola.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "cereza",
+    slug: "cereza",
+    name: "Cereza",
+    description: "Bebida agua mineral sabor cereza",
+    price: 7200,
+    category: "bebidas",
+    imagePath: "/images/productos/cereza.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  // ── FRESAS CON CREMA ──────────────────────────────────────────────────────
+  {
+    id: "fresas-crema",
+    slug: "fresas-crema",
+    name: "Fresas con Crema",
+    description: "Las clásicas, frescas y cremosas",
+    price: 13500,
+    category: "fresas",
+    imagePath: "/images/productos/fresas-crema.webp",
+    isFeatured: true,
+    isAvailable: true,
+  },
+  {
+    id: "fresas-oreo",
+    slug: "fresas-oreo",
+    name: "Fresas Oreo",
+    description: "Con galleta Oreo y chocolate",
+    price: 17200,
+    category: "fresas",
+    imagePath: "/images/productos/fresas-oreo.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "fresas-pinguino",
+    slug: "fresas-pinguino",
+    name: "Fresas Pingüino",
+    description: "Con Pingüino y chocolate",
+    price: 17200,
+    category: "fresas",
+    imagePath: "/images/productos/fresas-pinguino.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+  {
+    id: "fresas-gansito",
+    slug: "fresas-gansito",
+    name: "Fresas Gansito",
+    description: "Sabor Gansito con chocolate",
+    price: 17200,
+    category: "fresas",
+    imagePath: "/images/productos/fresas-gansito.webp",
+    isFeatured: false,
+    isAvailable: true,
+  },
+];
+
+export const sucursales: Sucursal[] = [
+  {
+    id: "valdepeñas",
+    name: "Valdepeñas",
+    address: "Rinconada de Camichín & Av. Valdepeñas",
+    neighborhood: "Zapopan",
+    city: "Jalisco",
+    mapsUrl: "https://maps.app.goo.gl/THSCrHLweWpgrJWs6",
+    mapsEmbedUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59710.82834396093!2d-103.43481849453123!3d20.672837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3fc69a4a93%3A0x4f2d4ad33c23b01b!2sSon%20Charolas!5e0!3m2!1ses-419!2smx!4v1",
+    schedule: [
+      { days: "Lunes – Viernes", hours: "12:00 – 21:00" },
+      { days: "Sáb – Dom", hours: "11:00 – 22:00" },
+    ],
+    imagePath: "/images/sucursales/valdepeñas.webp",
+  },
+  {
+    id: "rancho-blanco",
+    name: "Rancho Blanco",
+    address: "C. 5 de Febrero 2696",
+    neighborhood: "Rancho Blanco",
+    city: "San Pedro Tlaquepaque, Jal.",
+    mapsUrl: "https://maps.app.goo.gl/THSCrHLweWpgrJWs6",
+    mapsEmbedUrl:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59710.82834396093!2d-103.43481849453123!3d20.672837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3fc69a4a93%3A0x4f2d4ad33c23b01b!2sSon%20Charolas!5e0!3m2!1ses-419!2smx!4v1",
+    instagramHandle: "soncharolastlaq",
+    schedule: [{ days: "Mar – Dom", hours: "12:00 – 21:00" }],
+    imagePath: "/images/sucursales/rancho-blanco.webp",
+  },
+];
+
+export const activePromo: Promo = {
+  id: "jueves-2x1",
+  title: "¡Los Jueves son de Charolas!",
+  description: "La 2da charola a mitad de precio todos los jueves. Sin límite.",
+  validDays: ["jueves"],
+  isActive: true,
+  badgeText: "SOLO JUEVES",
+};
+
+export const reviews: Review[] = [
+  {
+    id: "r1",
+    author: "Valeria M.",
+    text: "La Juanicharola es una experiencia. Nunca había comido algo así de bueno. La salsa sonorense es otro nivel.",
+    rating: 5,
+    product: "Juanicharola",
+    source: "google",
+  },
+  {
+    id: "r2",
+    author: "Diego R.",
+    text: "Llegué por el video de Juanito y me quedé por el sabor. El Clamatazo está brutal. Ya voy cada semana.",
+    rating: 5,
+    product: "Clamatazo",
+    source: "instagram",
+  },
+  {
+    id: "r3",
+    author: "Sofía L.",
+    text: "Las fresas con Gansito son el mejor postre que he comido en Guadalajara. Sin exagerar.",
+    rating: 5,
+    product: "Fresas Gansito",
+    source: "google",
+  },
+  {
+    id: "r4",
+    author: "Carlos T.",
+    text: "Servicio rapidísimo y sabores brutales. La sucursal de Zapopan está perfecta de ubicación.",
+    rating: 5,
+    source: "google",
+  },
+];
+
+export function getFeaturedProducts(): Product[] {
+  return products.filter((p) => p.isFeatured && p.isAvailable);
+}
+
+export function getProductsByCategory(category: ProductCategory): Product[] {
+  return products.filter((p) => p.category === category && p.isAvailable);
+}
