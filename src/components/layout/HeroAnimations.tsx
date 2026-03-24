@@ -11,7 +11,7 @@ export default function HeroAnimations() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-semibold"
+        className="inline-flex items-center gap-2 mb-8 md:mb-5 px-4 py-1.5 rounded-full text-xs uppercase tracking-widest font-semibold"
         style={{
           background: "rgba(244,161,0,0.15)",
           border: "1px solid rgba(244,161,0,0.35)",

@@ -5,7 +5,7 @@ import HeroProductImage from "./HeroProductImage";
 export default function HeroSection() {
   return (
     <section
-      className="relative min-h-[100svh] flex items-end overflow-hidden"
+      className="relative min-h-[100svh] flex flex-col overflow-hidden"
       style={{ background: "#1A0A00" }}
     >
       {/* Gradient de fondo */}
@@ -50,7 +50,7 @@ export default function HeroSection() {
       {/* Imagen móvil: estática, top 20px */}
       <div
         className="absolute left-0 right-0 md:hidden pointer-events-none"
-        style={{ zIndex: 2, top: "20px", height: "54%" }}
+        style={{ zIndex: 2, top: "20px", height: "54svh" }}
       >
         <Image
           src="/images/hero-product.png"
@@ -72,7 +72,7 @@ export default function HeroSection() {
 
       {/* Texto: encima de todo */}
       <div
-        className="relative w-full max-w-7xl mx-auto px-5 pb-12 md:pb-16"
+        className="relative w-full max-w-7xl mx-auto px-5 pb-12 md:pb-16 mt-[calc(54svh+60px)] md:mt-auto"
         style={{ zIndex: 30 }}
       >
         <HeroAnimations />
